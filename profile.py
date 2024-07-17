@@ -55,7 +55,7 @@ ran = request.RawPC( "ran" )
 ran.hardware_type = params.phystype
 ran.disk_image = "urn:publicid:IDN+emulab.net+image+mww2023:oai-cn5g-rfsim"
 ran.startVNC()
-iface_ran = core.addInterface('interface-ran', rspec.IPv4Address('10.10.1.2','255.255.255.0'))
+iface_ran = ran.addInterface('interface-ran', rspec.IPv4Address('10.10.1.2','255.255.255.0'))
 
 link = request.Link('link')
 link.addInterface(iface_core)
