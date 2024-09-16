@@ -1,6 +1,9 @@
 username=$(whoami)  
 groupname=$(id -gn)
 
+
+cd /
+
 sudo chown $username:$groupname mydata  
 chmod 775 mydata  
 # verify the result
